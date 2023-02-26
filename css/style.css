@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap");
 
+.test-section {
+  width: 100%;
+  background-color: aqua;
+}
+img {
+  max-width: 100%;
+}
 /* Убираем внутренние отступы */
 ul[class],
 ol[class] {
@@ -60,6 +67,7 @@ body {
 .menu {
   display: flex;
   list-style: none;
+  text-transform: uppercase;
 }
 
 .menu-item {
@@ -67,12 +75,14 @@ body {
 }
 
 .menu-link:hover {
-  text-transform: uppercase;
   color: #e3b873;
 }
-
+.line-test {
+  line-height: 150px;
+}
 .tel {
   color: #fff;
+  padding-bottom: 10px;
 }
 .tel:hover {
   color: #e3b873;
@@ -197,7 +207,7 @@ body {
   letter-spacing: -0.07em;
   text-transform: uppercase;
   color: #e3b873;
-  padding-bottom: 34px;
+  margin-bottom: 34px;
 }
 
 .content-projects {
@@ -206,10 +216,22 @@ body {
   margin-bottom: 91px;
 }
 .room {
-  width: 680px;
-  height: 482px;
+  max-width: 680px;
 }
+.projects-col {
+  width: 50%;
+  margin-bottom: 42px;
+}
+.projects-col > h3 {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
 
+  color: #e3b873;
+}
 .completed-text {
   font-family: "Nunito Sans";
   font-style: normal;
@@ -217,7 +239,6 @@ body {
   font-size: 14px;
   line-height: 27px;
   color: #ffffff;
-  padding-bottom: 42px;
 }
 .subtitle-bloc {
   font-family: "Yeseva One";
