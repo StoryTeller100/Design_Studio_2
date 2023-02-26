@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap");
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* ================== */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  min-height: 100vh;
+}
+.header {
+  background-color: #131313;
+  padding: 24px 0 22px;
+  font-size: 11px;
+  line-height: 15px;
+  color: #fff;
+}
+
+.container {
+  max-width: 1256px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  text-transform: uppercase;
+  color: #e3b873;
+}
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu-item {
+  margin-right: 47px;
+}
+
+.menu-link:hover {
+  text-transform: uppercase;
+  color: #e3b873;
+}
+
+.tel {
+  color: #fff;
+}
+.tel:hover {
+  color: #e3b873;
+  border-bottom: 1px solid;
+}
+.tel:active {
+  color: #e3b873;
+  border-bottom: 1px solid;
+}
+
+/* .tel.activ::after {
+  content: "";
+  width: 69%;
+  height: 1px;
+  background-color: #e3b873;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+} */
+/* кнопка */
+.button {
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  color: white;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+}
+.button:hover {
+  background-color: #e3b873;
+  border: 1px solid #e3b873;
+}
+.button-header {
+  font-size: 11px;
+  font-style: italic;
+  font-family: "Yeseva One";
+  padding: 13px 33px;
+  margin-left: 45px;
+}
+
+/* ========= MAIN ======= */
+/* SECTION 1 ============ */
+.overlay {
+  background-image: url(../img/sity.jpg);
+  background-size: cover;
+  background-position: center;
+}
+/* не получилось поставить правильно фото в секции */
+.shadow {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.title {
+  font-family: Yeseva One;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: white;
+  padding-top: 194px;
+  padding-bottom: 19px;
+}
+.title-overlay {
+  color: #e3b873;
+}
+.text-overlay {
+  font-size: 22px;
+  line-height: 36px;
+  padding-bottom: 41px;
+
+  color: #ffffff;
+}
+/*  под кнопками уезжает content */
+.overlay .button {
+  margin: 0 20px 174px 0;
+}
+
+.button-overlay {
+  width: 207px;
+  height: 51px;
+
+  font-size: 11px;
+  font-style: italic;
+  font-family: "Yeseva One";
+  padding: 20px;
+}
+
+/* SECTION 2 ===================*/
+.completed-projects {
+  background-color: #131313;
+}
+.projects-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+.projects-item {
+  margin: 89px 60px 45px 0;
+}
+.projects-link {
+  font-family: "Yeseva One";
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.3);
+}
+.projects-link:hover {
+  color: #e3b873;
+  border-bottom: 1px solid;
+}
+.projects-link:active {
+  color: #e3b873;
+  border-bottom: 1px solid;
+}
+
+.completed {
+  max-width: 490px;
+}
+.subtitle {
+  font-family: "Yeseva One";
+  font-size: 27px;
+  line-height: 37px;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  color: #e3b873;
+  padding-bottom: 34px;
+}
+
+.content-projects {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 91px;
+}
+.room {
+  width: 680px;
+  height: 482px;
+}
+
+.completed-text {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #ffffff;
+  padding-bottom: 42px;
+}
+.subtitle-bloc {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+
+  color: #e3b873;
+}
+.completed .subtitle-bloc {
+  width: 213px;
+}
+.text-projects {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  width: 161px;
+  margin-bottom: 34px;
+
+  color: #ffffff;
+}
+.projects-bloc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.online .subtitle-bloc {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  margin-bottom: 13px;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 257px;
+}
+
+/* section 3 ============= */
+.video {
+  background-image: url(../img/men.jpg);
+  width: 817px;
+  height: 434px;
+  margin: auto;
+  margin-top: -217px;
+}
+.shadow {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.play {
+  /* background-image: url(../img/online-control/play.svg); */
+  padding-top: 146px;
+
+  display: flex;
+  justify-content: center;
+
+  cursor: pointer;
+}
