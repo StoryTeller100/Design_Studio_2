@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap");
 
-.test-section {
-  width: 100%;
-  background-color: aqua;
-}
 img {
   max-width: 100%;
 }
@@ -31,6 +27,10 @@ dd {
   margin: 0;
 }
 
+ul[class],
+ol[class] {
+  list-style: none;
+}
 /* ================== */
 
 a {
@@ -296,6 +296,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+
   background-color: rgba(0, 0, 0, 0.8);
 }
 .play {
@@ -303,8 +304,55 @@ body {
 
   display: flex;
   justify-content: center;
-  /* почему нельзя сделать  background-position: 50%;*/
+  /* почему нельзя сделать  background-position: 50%; */
   background-position: 50%;
 
   cursor: pointer;
 }
+hr {
+  width: 55px;
+  height: 1.5px;
+  background-color: #e3b873;
+  margin-top: 62px;
+  margin-bottom: 35px;
+  border: none;
+}
+/* ФОРМА ==== */
+.text-section {
+  width: 652px;
+  margin: auto;
+  margin-bottom: 92px;
+  font-size: 18px;
+  line-height: 37px;
+  text-align: center;
+
+  color: #363636;
+}
+
+.name {
+  font-size: 13px;
+  line-height: 21px;
+
+  color: rgba(54, 54, 54, 0.5);
+}
+.username {
+  border: none;
+  font-size: 14px;
+  line-height: 23px;
+
+  color: #363636;
+}
+.username:hover {
+  color: rgba(54, 54, 54, 0.5);
+  border: 1px solid;
+}
+/* .btn .button {
+  font-size: 13px;
+  line-height: 27px;
+  
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+} */
