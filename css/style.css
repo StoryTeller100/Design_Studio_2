@@ -2,6 +2,7 @@
 
 img {
   max-width: 100%;
+  display: block;
 }
 /* Убираем внутренние отступы */
 ul[class],
@@ -330,7 +331,6 @@ hr {
 }
 /* ФОРМА ==== */
 
-
 .form-name {
   display: flex;
   justify-content: space-between;
@@ -338,11 +338,11 @@ hr {
   margin: auto;
   margin-bottom: 34px;
   max-width: 770px;
-
 }
 .first-checkbox {
   display: flex;
   justify-content: center;
+  margin-bottom: 148px;
 }
 
 .name {
@@ -406,4 +406,56 @@ hr {
 }
 .checkbox:checked + .fake {
   background-color: #e3b873;
+}
+
+/* SECTION 4 ========= */
+
+.subtitle-bloc {
+  color: #131313;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 13px;
+}
+.icon-bloc {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 31px;
+}
+.repair-bloc {
+}
+.bloc-content {
+}
+.repair-title {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #363636;
+}
+.repair-bloc .wrap-list {
+  list-style: disc;
+  font-size: 13px;
+  line-height: 27px;
+  color: #959595;
+}
+.wrap-item {
+}
+.repair-price {
+  width: 228px;
+  height: 54px;
+  background: #E3B873;
+box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+}
+.price-text {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  padding: 15px 22px;
+
+  color: #ffffff;
 }
