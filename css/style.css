@@ -81,7 +81,7 @@ body {
 
 .tel {
   color: #fff;
-  padding-bottom: 10px;
+  
 }
 .tel:hover {
   color: #e3b873;
@@ -184,6 +184,7 @@ body {
   font-size: 14px;
   line-height: 19px;
   text-transform: uppercase;
+  padding-bottom: 3px;
 
   color: rgba(255, 255, 255, 0.3);
 }
@@ -240,6 +241,7 @@ body {
   font-size: 14px;
   line-height: 27px;
   color: #ffffff;
+  padding-bottom: 42px;
 }
 .subtitle-bloc {
   font-family: "Yeseva One";
@@ -421,9 +423,36 @@ hr {
   justify-content: center;
   margin-bottom: 31px;
 }
-.repair-bloc {
+.repair {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 320px;
+
+}
+.repair-bloc1 {
+  background-image: url(../img/redecorating.jpg);
+  
+  /* background-size: cover; */
+}
+.repair-bloc2 {
+  background-image: url(../img/overhaul.jpg);
+  
+}
+.repair-bloc3 {
+  background-image: url(../img/designer-repair.jpg);
+}
+.repeat {
+  background-repeat: no-repeat;
+  height: 421px;
+  width: 392px;
+
 }
 .bloc-content {
+  width: 286px;
+  padding: 25px 34px;
+  margin-top: 294px;
+  background-color: white;
+ 	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
 }
 .repair-title {
   font-family: "Yeseva One";
@@ -434,17 +463,17 @@ hr {
 
   color: #363636;
 }
-.repair-bloc .wrap-list {
+.bloc-content .wrap-list {
   list-style: disc;
   font-size: 13px;
   line-height: 27px;
   color: #959595;
 }
-.wrap-item {
-}
+
 .repair-price {
   width: 228px;
   height: 54px;
+  margin-top: -27px;
   background: #E3B873;
 box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
 }
@@ -452,10 +481,34 @@ box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
   font-family: "Yeseva One";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  
   line-height: 25px;
   text-transform: uppercase;
   padding: 15px 22px;
-
+ 
   color: #ffffff;
+}
+/* Поддержка */
+
+.support {
+
+}
+.support-bloc {
+
+}
+.number-bloc {
+
+}
+.number {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #e3b873;
+
+}
+.support-text {
+
+}
+.support-form {
 }
