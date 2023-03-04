@@ -276,29 +276,66 @@
         <div class="support">
           <div class="support-bloc">
             <div class="number-bloc">
-              <div class="number"><p class="number-one">01</p></div>
+              <div class="number"><a href="#" class="number-one">01</a></div>
               <p class="support-text">Our specialist will arrive for measurements per day contact, or appoint a date convenient for you</p>
             </div>
             <div class="number-bloc">
-              <div class="number"><p class="number-one">02</p></div>
+              <div class="number"><a href="#" class="number-one">02</a></div>
               <p class="support-text">Free metering</p>
             </div>
             <div class="number-bloc">
-              <div class="number"><p class="number-one">03</p></div>
+              <div class="number"><a href="#" class="number-one">03</a></div>
               <p class="support-text">Free consultation</p>
             </div>
             <div class="number-bloc">
-              <div class="number"><p class="number-one">04</p></div>
+              <div class="number"><a href="#" class="number-one">04</a></div>
               <p class="support-text">Get a cost estimate and the timing of your future repairs</p>
             </div>
 
           </div>
+          <!--  ===ФОРМА=== -->
           <form class="support-form" action="#">
-           <input  class=""
-           tabindex="1"
-           type="text"
-           name="username"
-           value="What is your name:">
+            <h6 class="support-title">Leave a request for free<br> departure of the measurer</h6>
+
+            <div class="form-name form-style">
+              <div>
+                <label class="name name-style" for="firstname">Name</label><br />
+                <!-- (name:) разместить под border:  -->
+                <input
+                  class="username username-style"
+                  tabindex="1"
+                  type="text"
+                  name="username"
+                  value="What is your name:"
+                />
+              </div>
+              
+              <div>
+                <label class="name name-style" for="Phone">Phone</label><br />
+                <input
+                  class="username username-style"
+                  tabindex="2"
+                  name="userphone"
+                  ntype="tel"
+                  value="Your phone number:"
+                />
+              </div>
+  
+              <div>
+                <button class="button bttn">Submit</button>
+              </div>
+            </div>
+            <div>
+              <div class="first-checkbox">
+                <label class="label">
+                  <input type="checkbox" class="checkbox" />
+                  <span class="fake"></span>
+                  <span class="text"
+                    >I agree to the processing of personal data.</span
+                  >
+                </label>
+              </div>
+            </div>
 
           </form>
         </div>

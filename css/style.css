@@ -9,7 +9,9 @@ ul[class],
 ol[class] {
   padding: 0;
 }
-
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 /* Убираем внешние отступы */
 body,
 h1,
@@ -500,6 +502,10 @@ box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
 
 }
 .number-bloc {
+  display: flex;
+  align-items: center;
+  padding-bottom: 102px;
+  
 
 }
 .number {
@@ -540,9 +546,37 @@ align-items: center;
 
 }
 .support-text {
+  font-size: 14px;
+line-height: 19px;
+width: 100%;
+max-width: 320px;
+padding-left: 17px;
+color: #363636;
 
 }
+/* ФОРМА ============ */
 .support-form {
+  background-color: #131313;
+  width: 100%;
+  max-width: 506px;
 }
 
- 
+.support-title {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  
+  color: #FFFFFF;
+ }
+.form-style {
+  max-width: 408px;
+   display: flex;
+   flex-wrap: wrap;
+   
+ }
+.name-style {
+
+ }
+ .username-style {
+
+ }
