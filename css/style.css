@@ -501,6 +501,7 @@ hr {
 .support {
   display: flex;
   justify-content: end;
+  align-items: center;
 }
 .support-img {
   background-image: url(../img/fon1.jpg);
@@ -508,19 +509,27 @@ hr {
   height: 645px;
 }
 .support-bloc {
-  margin-right: 210px;
+  margin-right: 130px;
 }
+
 .number-bloc {
   display: flex;
   align-items: center;
-  padding-bottom: 102px;
+  padding-bottom: 94px;
+}
+.number-bloc:last-child {
+  padding-bottom: 0;
+}
+.number-bloc:first-child {
+  padding-top: 10px;
 }
 .number {
   width: 55px;
   height: 55px;
   border-radius: 50%;
   position: relative;
-  background-color: #4e1010;
+  background-color: #fff;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
 }
 .number::before {
   content: "";
@@ -567,7 +576,7 @@ hr {
 }
 .form-style {
   flex-direction: column;
-  height: 50px;
+  max-width: 408px;
 }
 .support-title {
   font-size: 18px;
@@ -576,9 +585,6 @@ hr {
   margin-top: 0;
   margin-bottom: 35px;
   color: #ffffff;
-}
-.form-style {
-  max-width: 408px;
 }
 
 .name-style {
@@ -609,3 +615,22 @@ hr {
   display: flex;
   justify-content: end;
 }
+.suppor-icon {
+  display: flex;
+  justify-content: center;
+  margin-left: 580px;
+} 
+.icon-text {
+  font-size: 18px;
+line-height: 26px;
+color: #E3B873;
+text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+text-align: left;
+display: inline-flex;
+align-items: center;
+
+
+}
+
+
+
