@@ -9,7 +9,9 @@ ul[class],
 ol[class] {
   padding: 0;
 }
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 /* Убираем внешние отступы */
@@ -44,6 +46,10 @@ body {
   font-family: "Nunito Sans";
   font-style: normal;
   min-height: 100vh;
+}
+
+.wrapper {
+  min-height: 100%;
 }
 .header {
   background-color: #131313;
@@ -83,7 +89,6 @@ body {
 
 .tel {
   color: #fff;
-  
 }
 .tel:hover {
   color: #e3b873;
@@ -127,6 +132,7 @@ body {
 
 /* ========= MAIN ======= */
 /* SECTION 1 ============ */
+
 .overlay {
   background-image: url(../img/sity.jpg);
   background-size: cover;
@@ -340,12 +346,16 @@ hr {
   justify-content: space-between;
 
   margin: auto;
+}
+.first-form {
   margin-bottom: 34px;
   max-width: 770px;
 }
 .first-checkbox {
   display: flex;
   justify-content: center;
+}
+.checkbox-label {
   margin-bottom: 148px;
 }
 
@@ -429,16 +439,14 @@ hr {
   display: flex;
   justify-content: space-between;
   margin-bottom: 320px;
-
 }
 .repair-bloc1 {
   background-image: url(../img/redecorating.jpg);
-  
+
   /* background-size: cover; */
 }
 .repair-bloc2 {
   background-image: url(../img/overhaul.jpg);
-  
 }
 .repair-bloc3 {
   background-image: url(../img/designer-repair.jpg);
@@ -447,14 +455,13 @@ hr {
   background-repeat: no-repeat;
   height: 421px;
   width: 392px;
-
 }
 .bloc-content {
   width: 286px;
   padding: 25px 34px;
   margin-top: 294px;
   background-color: white;
- 	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
 }
 .repair-title {
   font-family: "Yeseva One";
@@ -476,37 +483,37 @@ hr {
   width: 228px;
   height: 54px;
   margin-top: -27px;
-  background: #E3B873;
-box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  background: #e3b873;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
 }
 .price-text {
   font-family: "Yeseva One";
   font-style: normal;
   font-weight: 400;
-  
+
   line-height: 25px;
   text-transform: uppercase;
   padding: 15px 22px;
- 
+
   color: #ffffff;
 }
 /* Поддержка */
-
 .support {
+  display: flex;
+  justify-content: end;
+}
+.support-img {
   background-image: url(../img/fon1.jpg);
   background-repeat: no-repeat;
   height: 645px;
-
 }
 .support-bloc {
-
+  margin-right: 210px;
 }
 .number-bloc {
   display: flex;
   align-items: center;
   padding-bottom: 102px;
-  
-
 }
 .number {
   width: 55px;
@@ -514,7 +521,6 @@ box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
   border-radius: 50%;
   position: relative;
   background-color: #4e1010;
-  
 }
 .number::before {
   content: "";
@@ -525,58 +531,81 @@ box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
   z-index: 1;
   background-color: #e3b873;
   margin: 6.5px 0 0 6.5px;
- 
 }
 .number-one {
-  font-family: 'Yeseva One';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 25px;
-text-align: center;
-color: #fff;
-width: 42px;
-height: 42px;
-margin: 6.5px 0 0 6.5px;
-position: absolute;
-z-index: 2;
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  width: 42px;
+  height: 42px;
+  margin: 6.5px 0 0 6.5px;
+  position: absolute;
+  z-index: 2;
   display: flex;
-justify-content: center;
-align-items: center;
-
+  justify-content: center;
+  align-items: center;
 }
 .support-text {
   font-size: 14px;
-line-height: 19px;
-width: 100%;
-max-width: 320px;
-padding-left: 17px;
-color: #363636;
-
+  line-height: 19px;
+  width: 100%;
+  max-width: 320px;
+  padding-left: 17px;
+  color: #363636;
 }
 /* ФОРМА ============ */
 .support-form {
   background-color: #131313;
   width: 100%;
   max-width: 506px;
+  padding: 28px 50px 28px;
+  height: 509px;
 }
-
+.form-style {
+  flex-direction: column;
+  height: 50px;
+}
 .support-title {
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-  
-  color: #FFFFFF;
- }
+  margin-top: 0;
+  margin-bottom: 35px;
+  color: #ffffff;
+}
 .form-style {
   max-width: 408px;
-   display: flex;
-   flex-wrap: wrap;
-   
- }
+}
+
 .name-style {
+  color: rgba(255, 255, 255, 0.5);
+}
+.username-style {
+  width: 400px;
+  margin-bottom: 50px;
+  background-color: #131313;
 
- }
- .username-style {
-
- }
+  color: #ffffff;
+}
+.username-style:hover {
+  border: none;
+  color: #959595;
+  border-bottom: rgba(255, 255, 255, 0.5);
+}
+.text-style {
+  color: #fff;
+}
+.email-style {
+  margin-bottom: 15px;
+}
+.support-checkbox {
+  margin-bottom: 40px;
+}
+.support-btn {
+  display: flex;
+  justify-content: end;
+}
