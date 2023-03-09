@@ -79,11 +79,11 @@ body {
   text-transform: uppercase;
 }
 
-.menu-item {
+.menu__menu-item {
   margin-right: 47px;
 }
 
-.menu-link:hover {
+.menu__menu-link:hover {
   color: #e3b873;
 }
 
@@ -133,8 +133,8 @@ body {
 /* ========= MAIN ======= */
 /* SECTION 1 ============ */
 
-.overlay {
-  background-image: url(../img/sity.jpg);
+.about {
+  background-image: url(../html/img/sity.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -151,10 +151,10 @@ body {
   padding-top: 194px;
   padding-bottom: 19px;
 }
-.title-overlay {
+.about__title {
   color: #e3b873;
 }
-.text-overlay {
+.about__text {
   font-size: 22px;
   line-height: 36px;
   padding-bottom: 41px;
@@ -162,11 +162,9 @@ body {
   color: #ffffff;
 }
 /*  под кнопками уезжает content */
-.overlay .button {
-  margin: 0 20px 174px 0;
-}
 
-.button-overlay {
+
+.about__button {
   width: 207px;
   height: 51px;
 
@@ -174,20 +172,21 @@ body {
   font-style: italic;
   font-family: "Yeseva One";
   padding: 20px;
+  margin: 0 20px 174px 0;
 }
 
 /* SECTION 2 ===================*/
-.completed-projects {
+.projects {
   background-color: #131313;
 }
-.projects-menu {
+.projects__menu {
   display: flex;
   justify-content: flex-end;
 }
-.projects-item {
+.projects__item {
   margin: 89px 60px 45px 0;
 }
-.projects-link {
+.projects__link {
   font-family: "Yeseva One";
   font-size: 14px;
   line-height: 19px;
@@ -196,16 +195,20 @@ body {
 
   color: rgba(255, 255, 255, 0.3);
 }
-.projects-link:hover {
+.projects__link:hover {
   color: #e3b873;
   border-bottom: 1px solid;
 }
-.projects-link:active {
+.projects__link:active {
   color: #e3b873;
   border-bottom: 1px solid;
 }
-
-.completed {
+.projects__content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 91px;
+}
+.projects__service-list {
   max-width: 490px;
 }
 .subtitle {
@@ -218,21 +221,17 @@ body {
   margin-bottom: 34px;
 }
 
-.content-projects {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 91px;
-}
+
 .room {
   max-width: 680px;
   /* почему не видно фильтр */
   filter: drop-shadow(0px 50px 30px rgba(0, 0, 0, 0.15));
 }
-.projects-col {
+.projects__bloc-item {
   width: 50%;
   margin-bottom: 42px;
 }
-.projects-col > h3 {
+.projects__bloc-item > h3 {
   font-family: "Yeseva One";
   font-style: normal;
   font-weight: 400;
@@ -242,7 +241,7 @@ body {
 
   color: #e3b873;
 }
-.completed-text {
+.projects__service-list-text {
   font-family: "Nunito Sans";
   font-style: normal;
   font-weight: 400;
@@ -261,10 +260,10 @@ body {
 
   color: #e3b873;
 }
-.completed .subtitle-bloc {
+.projects__service-list .subtitle-bloc {
   width: 213px;
 }
-.text-projects {
+.projects__bloc-text {
   font-family: "Nunito Sans";
   font-style: normal;
   font-weight: 400;
@@ -275,7 +274,7 @@ body {
 
   color: #ffffff;
 }
-.projects-bloc {
+.projects__bloc {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -288,21 +287,21 @@ body {
   color: #fff;
   margin-bottom: 13px;
 }
-.icon {
+.projects__icon {
   display: flex;
   justify-content: center;
   padding-bottom: 257px;
 }
 
 /* section 3 ============= */
-.video {
-  background-image: url(../img/men.jpg);
+.camera__video {
+  background-image: url(../html/img/men.jpg);
   width: 817px;
   height: 434px;
   margin: auto;
   margin-top: -217px;
 }
-.shadow {
+.camera__shadow {
   top: 0;
   left: 0;
   width: 100%;
@@ -310,7 +309,7 @@ body {
 
   background-color: rgba(0, 0, 0, 0.8);
 }
-.play {
+.camera__play {
   padding-top: 146px;
 
   display: flex;
@@ -329,7 +328,7 @@ hr {
   border: none;
 }
 
-.text-section {
+.camera__text {
   width: 652px;
   margin: auto;
   margin-bottom: 92px;

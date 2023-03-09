@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../Design_Studio_2/css/normalaize.css" />
-    <link rel="stylesheet" href="../Design_Studio_2/css/style.css" />
+    <link rel="stylesheet" href="../css/normalais.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Design Studio</title>
   </head>
 
@@ -17,23 +17,23 @@
           <span class="logo"> IC "REPAIR DESING PROGECTS" </span>
           <nav>
             <ul class="menu">
-              <li class="menu-item">
-                <a class="menu-link" href="#">home</a>
+              <li class="menu__menu-item">
+                <a class="menu__menu-link" href="#">home</a>
               </li>
-              <li class="menu-item">
-                <a class="menu-link" href="#">PROJECTS</a>
+              <li class="menu__menu-item">
+                <a class="menu__menu-link" href="#">PROJECTS</a>
               </li>
-              <li class="menu-item">
-                <a class="menu-link" href="#">MEASUREMENT</a>
+              <li class="menu__menu-item">
+                <a class="menu__menu-link" href="#">MEASUREMENT</a>
               </li>
-              <li class="menu-item">
-                <a class="menu-link" href="#">TEAM</a>
+              <li class="menu__menu-item">
+                <a class="menu__menu-link" href="#">TEAM</a>
               </li>
-              <li class="menu-item">
-                <a class="menu-link" href="#">REVIEWS</a>
+              <li class="menu__menu-item">
+                <a class="menu__menu-link" href="#">REVIEWS</a>
               </li>
-              <li class="menu-item">
-                <a class="menu-link" href="#">CONTACTS</a>
+              <li class="menu__menu-item">
+                <a class="menu__menu-link" href="#">CONTACTS</a>
               </li>
             </ul>
           </nav>
@@ -46,23 +46,21 @@
 
       <main class="main">
         <!-- SECTION 1 -->
-        <section class="overlay">
+        <section class="about">
           <div class="shadow">
             <div class="container">
               <h1 class="title">
                 Turnkey Repair in the<br />
-                city of <span class="title-overlay">Rostov-on-Don</span>
+                city of <span class="about__title">Rostov-on-Don</span>
               </h1>
-              <p class="text-overlay">
+              <p class="about__text">
                 Get ready-made turnkey repairs on time<br />
                 with work time saving up to 45 days and 20% from<br />
                 cost of materials due to the organization of work
               </p>
               <div>
-                <button class="button button-overlay">
-                  CALCULATE THE COST
-                </button>
-                <button class="button button-overlay">
+                <button class="button about__button">CALCULATE THE COST</button>
+                <button class="button about__button">
                   SUBMIT YOUR APPLICATION
                 </button>
               </div>
@@ -70,75 +68,73 @@
           </div>
         </section>
         <!-- SECTION 2 -->
-        <section class="completed-projects">
-          <div class="container container-projects">
-            <ul class="projects-menu">
-              <li class="projects-item">
-                <a class="projects-link" href="#">Rostov-on-Don, Admiral</a>
+        <section class="projects">
+          <div class="container">
+            <ul class="projects__menu">
+              <li class="projects__item">
+                <a class="projects__link" href="#">Rostov-on-Don, Admiral</a>
               </li>
-              <li class="projects-item">
-                <a class="projects-link" href="#">Sochi Thieves</a>
+              <li class="projects__item">
+                <a class="projects__link" href="#">Sochi Thieves</a>
               </li>
-              <li class="projects-item">
-                <a class="projects-link" href="#">Rostov-on-Don Patriotic</a>
+              <li class="projects__item">
+                <a class="projects__link" href="#">Rostov-on-Don Patriotic</a>
               </li>
             </ul>
-            <div class="content-projects">
-              <div class="completed">
+            <div class="projects__content">
+              <div class="projects__service-list">
                 <h2 class="subtitle">Completed<br />projects</h2>
-                <p class="completed-text">
+                <p class="projects__service-list-text">
                   Only a small part of the work performed by our company is
                   presented<br />
                   on the site. For 14 years on in the construction market we
                   have made<br />
                   happy more than 1000 families
                 </p>
-                <div class="projects-bloc">
-                  <div class="projects-col">
+                <div class="projects__bloc">
+                  <div class="projects__bloc-item">
                     <h3>SITY:</h3>
-                    <p class="text-projects">
+                    <p class="projects__bloc-text">
                       Rostov-on-Don<br />
                       LCD admiral
                     </p>
                   </div>
-                  <div class="projects-col">
+
+                  <div class="projects__bloc-item">
                     <h3>APARMENT AREA:</h3>
-                    <p class="text-projects">81 m2</p>
+                    <p class="projects__bloc-text">81 m2</p>
                   </div>
-                  <div class="projects-col">
+
+                  <div class="projects__bloc-item">
                     <h3>REPAIR TIME:</h3>
-                    <p class="text-projects">3.5 months</p>
+                    <p class="projects__bloc-text">3.5 months</p>
                   </div>
-                  <div class="projects-col">
+
+                  <div class="projects__bloc-item">
                     <h3>REPAIR COST:</h3>
-                    <p class="text-projects">Upon request</p>
+                    <p class="projects__bloc-text">Upon request</p>
                   </div>
                 </div>
-                <img
-                  src="../Design_Studio_2/img/grup-dot/group-8.4.svg"
-                  alt="grup"
-                />
+                <div class="projects__slider">
+                  <img src="../html/img/grup-dot/group-8.4.svg" alt="grup" />
+                </div>
               </div>
 
-              <img
-                class="room"
-                src="../Design_Studio_2/img/maskgroup2.jpg"
-                alt="room"
-              />
+              <img class="room" src="../html/img/maskgroup2.jpg" alt="room" />
             </div>
             <div class="online">
               <h3 class="subtitle-bloc">online control</h3>
-              <div class="icon">
+              <div class="projects__icon">
                 <img
-                  src="../Design_Studio_2/img/online-control/blak.svg"
+                  src="../html/img/online-control/blak.svg"
                   alt="blak"
                 />
                 <img
-                  src="../Design_Studio_2/img/online-control/vector-online-control.svg"
+                  src="../html/img/online-control/vector-online-control.svg"
                   alt="online-icon"
                 />
                 <img
-                  src="../Design_Studio_2/img/online-control/white.svg"
+                  src="../html/img/online-control/white.svg"
                   alt="white"
                 />
               </div>
@@ -147,30 +143,31 @@
         </section>
         <!-- SECTION 3 -->
 
-        <section class="container">
+        <section class="camera">
           <!-- подумать как сократить вложенность -->
-          <div class="video">
-            <div class="shadow">
-              <div class="play">
+          <div class="camera__video">
+            <div class="camera__shadow">
+              <div class="camera__play">
                 <img
-                  class=""
-                  src="../Design_Studio_2/img/online-control/play.svg"
+                  
+                  src="../html/img/online-control/play.svg"
                   alt="play"
                 />
               </div>
             </div>
           </div>
-        </section>
-        <section class="container">
           <hr />
 
-          <p class="text-section">
+          <p class="camera__text">
             At each facility, a camera is installed that broadcasts the progress
             of work on the clock. At any time, you can go to our website and
             monitor the progress of work in your apartment. You can watch the
             live broadcast from one of our facilities! Leave a request below and
             you will receive a link to the broadcast.
           </p>
+        </section>
+        <section class="feedbac">
+        
           <form class="form" action="#">
             <div class="form-name first-form">
               <div>
@@ -360,19 +357,17 @@
                   <button class="button bttn">Call the measurer</button>
                 </div>
               </div>
-              
             </form>
-            
           </div>
           <div class="suppor-icon">
-            <img src="../Design_Studio_2/img/grup-dot/piggy.svg" alt="piggy">
-            <p class="icon-text">Help save 10 - 20% of the<br> cost of materials</p>
+            <img src="../Design_Studio_2/img/grup-dot/piggy.svg" alt="piggy" />
+            <p class="icon-text">
+              Help save 10 - 20% of the<br />
+              cost of materials
+            </p>
           </div>
         </section>
-        <section class="container">
-
-
-        </section>
+        <section class="container"></section>
       </main>
 
       <footer></footer>
