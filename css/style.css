@@ -403,24 +403,25 @@ hr {
 .checkbox {
   display: none;
 }
-.feedbac__fake {
+.fake {
   display: inline-flex;
   width: 18px;
   height: 18px;
   background: #e3b873;
   color: #fff;
   justify-content: center;
+  align-items: center;
 }
-.feedbac__fake::before {
+.fake::before {
   content: "\2714";
   opacity: 0;
   transition: 0.2s;
 }
-.checkbox:checked + .feedbac__fake::before {
+.checkbox:checked + .fake::before {
   opacity: 1;
   color: #fff;
 }
-.checkbox:checked + .feedbac__fake {
+.checkbox:checked + .fake {
   background-color: #e3b873;
 }
 
@@ -443,15 +444,15 @@ hr {
   margin-bottom: 320px;
 }
 .repair-bloc1 {
-  background-image: url(../img/redecorating.jpg);
+  background-image: url(../html/img/redecorating.jpg);
 
   /* background-size: cover; */
 }
 .repair-bloc2 {
-  background-image: url(../img/overhaul.jpg);
+  background-image: url(../html/img/overhaul.jpg);
 }
 .repair-bloc3 {
-  background-image: url(../img/designer-repair.jpg);
+  background-image: url(../html/img/designer-repair.jpg);
 }
 .repeat {
   background-repeat: no-repeat;
