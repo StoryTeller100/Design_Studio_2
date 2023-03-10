@@ -338,7 +338,7 @@ hr {
 
   color: #363636;
 }
-/* ФОРМА ==== */
+/* ФОРМА feedbac ==== */
 
 .feedbac__form-name {
   display: flex;
@@ -374,6 +374,7 @@ hr {
 .feedbac__checkbox {
   display: flex;
   justify-content: center;
+  margin-bottom: 148px;
 }
 
 
@@ -425,7 +426,7 @@ hr {
   background-color: #e3b873;
 }
 
-/* SECTION 4 ========= */
+/* SECTION 4 types-of-repair ========= */
 
 .subtitle-bloc {
   color: #131313;
@@ -443,15 +444,15 @@ hr {
   justify-content: space-between;
   margin-bottom: 320px;
 }
-.repair-bloc1 {
+.repair__bloc1 {
   background-image: url(../html/img/redecorating.jpg);
 
   /* background-size: cover; */
 }
-.repair-bloc2 {
+.repair__bloc2 {
   background-image: url(../html/img/overhaul.jpg);
 }
-.repair-bloc3 {
+.repair__bloc3 {
   background-image: url(../html/img/designer-repair.jpg);
 }
 .repeat {
@@ -459,14 +460,16 @@ hr {
   height: 421px;
   width: 392px;
 }
-.bloc-content {
+.repair__bloc-content {
   width: 286px;
   padding: 25px 34px;
   margin-top: 294px;
+  margin-left: 50px;
   background-color: white;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+ 
 }
-.repair-title {
+.repair__title {
   font-family: "Yeseva One";
   font-style: normal;
   font-weight: 400;
@@ -475,21 +478,22 @@ hr {
 
   color: #363636;
 }
-.bloc-content .wrap-list {
+.repair__wrap-list {
   list-style: disc;
   font-size: 13px;
   line-height: 27px;
   color: #959595;
 }
 
-.repair-price {
+.repair__price {
   width: 228px;
   height: 54px;
   margin-top: -27px;
+  margin-left: 50px;
   background: #e3b873;
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
 }
-.price-text {
+.price__text {
   font-family: "Yeseva One";
   font-style: normal;
   font-weight: 400;

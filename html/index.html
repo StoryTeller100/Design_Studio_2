@@ -168,59 +168,63 @@
         </section>
         <section class="feedbac">
         
-          <form action="#">
-            <div class="feedbac__form-name first-form">
-              <div>
-                <label class="feedbac__label" for="firstname">Name</label><br />
-                <!-- (name:) разместить под border:  -->
-                <input
-                  class="feedbac__input"
-                  tabindex="1"
-                  type="text"
-                  name="username"
-                  value="What is your name:"
-                />
+          <div class="container">
+            <form action="#">
+              <div class="feedbac__form-name first-form">
+                <div>
+                  <label class="feedbac__label" for="firstname">Name</label><br />
+                  <!-- (name:) разместить под border:  -->
+                  <input
+                    class="feedbac__input"
+                    tabindex="1"
+                    type="text"
+                    name="username"
+                    value="What is your name:"
+                  />
+                </div>
+                <div>
+                  <label class="feedbac__label" for="Phone">Phone</label><br />
+                  <input
+                    class="feedbac__input"
+                    tabindex="2"
+                    name="userphone"
+                    ntype="tel"
+                    value="Your phone number:"
+                  />
+                </div>
+  
+                <div>
+                  <button class="button bttn">Submit</button>
+                </div>
               </div>
               <div>
-                <label class="feedbac__label" for="Phone">Phone</label><br />
-                <input
-                  class="feedbac__input"
-                  tabindex="2"
-                  name="userphone"
-                  ntype="tel"
-                  value="Your phone number:"
-                />
+                <div class="feedbac__checkbox">
+                  <label class="label">
+                    <input class="checkbox" type="checkbox" />
+                    <span class="fake"></span>
+                    <span 
+                      >I agree to the processing of personal data.</span
+                    >
+                  </label>
+                </div>
               </div>
+            </form>
 
-              <div>
-                <button class="button bttn">Submit</button>
-              </div>
-            </div>
-            <div>
-              <div class="feedbac__checkbox">
-                <label class="label">
-                  <input class="checkbox" type="checkbox" />
-                  <span class="fake"></span>
-                  <span 
-                    >I agree to the processing of personal data.</span
-                  >
-                </label>
-              </div>
-            </div>
-          </form>
+          </div>
         </section>
         <!-- SECTION 4 -->
-        <section class="container">
+        <section class="types-of-repair">
+         <div class="container">
           <h3 class="subtitle-bloc">TYPES OF REPAIR</h3>
           <div class="icon-bloc">
             <img src="../html/img/grup-dot/hammer.svg" alt="icon" />
           </div>
 
           <div class="repair">
-            <div class="repair-bloc1 repeat">
-              <div class="bloc-content">
-                <p class="repair-title">Redecorating</p>
-                <ul class="wrap-list">
+            <div class="repair__bloc1 repeat">
+              <div class="repair__bloc-content">
+                <p class="repair__title">Redecorating</p>
+                <ul class="repair__wrap-list">
                   <li>Dismantling of old coatings</li>
                   <li>Wallpapering</li>
                   <li>Painting walls and ceilings</li>
@@ -230,15 +234,15 @@
                   <li>Replacing doors</li>
                 </ul>
               </div>
-              <div class="repair-price">
-                <p class="price-text">from 900 rub / m2</p>
+              <div class="repair__price">
+                <p class="price__text">from 900 rub / m2</p>
               </div>
             </div>
 
-            <div class="repair-bloc2 repeat">
-              <div class="bloc-content">
-                <p class="repair-title">Redecorating</p>
-                <ul class="wrap-list">
+            <div class="repair__bloc2 repeat">
+              <div class="repair__bloc-content">
+                <p class="repair__title">Redecorating</p>
+                <ul class="repair__wrap-list">
                   <li>Dismantling of old coatings</li>
                   <li>Wallpapering</li>
                   <li>Painting walls and ceilings</li>
@@ -248,15 +252,15 @@
                   <li>Replacing doors</li>
                 </ul>
               </div>
-              <div class="repair-price">
-                <p class="price-text">from 1800 rub / m2</p>
+              <div class="repair__price">
+                <p class="price__text">from 1800 rub / m2</p>
               </div>
             </div>
 
-            <div class="repair-bloc3 repeat">
-              <div class="bloc-content">
-                <p class="repair-title">Redecorating</p>
-                <ul class="wrap-list">
+            <div class="repair__bloc3 repeat">
+              <div class="repair__bloc-content">
+                <p class="repair__title">Redecorating</p>
+                <ul class="repair__wrap-list">
                   <li>Dismantling of old coatings</li>
                   <li>Wallpapering</li>
                   <li>Painting walls and ceilings</li>
@@ -266,8 +270,8 @@
                   <li>Replacing doors</li>
                 </ul>
               </div>
-              <div class="repair-price">
-                <p class="price-text">from 4000 rub / m2</p>
+              <div class="repair__price">
+                <p class="price__text">from 4000 rub / m2</p>
               </div>
             </div>
           </div>
@@ -366,6 +370,8 @@
               cost of materials
             </p>
           </div>
+
+         </div>
         </section>
         <section class="container"></section>
       </main>
