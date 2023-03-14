@@ -163,7 +163,6 @@ body {
 }
 /*  под кнопками уезжает content */
 
-
 .about__button {
   width: 207px;
   height: 51px;
@@ -220,7 +219,6 @@ body {
   color: #e3b873;
   margin-bottom: 34px;
 }
-
 
 .room {
   max-width: 680px;
@@ -349,14 +347,12 @@ hr {
 .first-form {
   margin-bottom: 34px;
   max-width: 770px;
-  
 }
 .feedbac__label {
   font-size: 13px;
   line-height: 21px;
 
   color: rgba(54, 54, 54, 0.5);
-  
 }
 .feedbac__input {
   border: none;
@@ -376,10 +372,6 @@ hr {
   justify-content: center;
   margin-bottom: 148px;
 }
-
-
-
-
 
 /* почему не работают заданные команды для button */
 .bttn {
@@ -467,7 +459,6 @@ hr {
   margin-left: 50px;
   background-color: white;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
- 
 }
 .repair__title {
   font-family: "Yeseva One";
@@ -511,26 +502,26 @@ hr {
   align-items: center;
 }
 .support-img {
-  background-image: url(../img/fon1.jpg);
+  background-image: url(../html/img/fon1.jpg);
   background-repeat: no-repeat;
   height: 645px;
 }
-.support-bloc {
+.support__bloc {
   margin-right: 130px;
 }
 
-.number-bloc {
+.support__number-limb {
   display: flex;
   align-items: center;
   padding-bottom: 94px;
 }
-.number-bloc:last-child {
+.support__number-limb:last-child {
   padding-bottom: 0;
 }
-.number-bloc:first-child {
+.support__number-limb:first-child {
   padding-top: 10px;
 }
-.number {
+.support__number {
   width: 55px;
   height: 55px;
   border-radius: 50%;
@@ -538,7 +529,7 @@ hr {
   background-color: #fff;
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
 }
-.number::before {
+.support__number::before {
   content: "";
   position: absolute;
   width: 42px;
@@ -548,24 +539,25 @@ hr {
   background-color: #e3b873;
   margin: 6.5px 0 0 6.5px;
 }
-.number-one {
+.support__number-text {
   font-family: "Yeseva One";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
-  text-align: center;
+
   color: #fff;
   width: 42px;
   height: 42px;
   margin: 6.5px 0 0 6.5px;
+  text-align: center;
   position: absolute;
   z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.support-text {
+.support__text {
   font-size: 14px;
   line-height: 19px;
   width: 100%;
@@ -574,18 +566,19 @@ hr {
   color: #363636;
 }
 /* ФОРМА ============ */
-.support-form {
+
+.support__form {
   background-color: #131313;
   width: 100%;
   max-width: 506px;
   padding: 28px 50px 28px;
   height: 509px;
 }
-.form-style {
+.support__form-style {
   flex-direction: column;
   max-width: 408px;
 }
-.support-title {
+.support__title {
   font-size: 18px;
   line-height: 26px;
   text-align: center;
@@ -594,22 +587,26 @@ hr {
   color: #ffffff;
 }
 
-.name-style {
+.support__label-style {
+  font-size: 13px;
+  line-height: 21px;
   color: rgba(255, 255, 255, 0.5);
 }
-.username-style {
+.support__input-style {
+  font-size: 14px;
+  line-height: 23px;
   width: 400px;
+  border: none;
   margin-bottom: 50px;
   background-color: #131313;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 
   color: #ffffff;
 }
-.username-style:hover {
-  border: none;
-  color: #959595;
-  border-bottom: rgba(255, 255, 255, 0.5);
-}
-.text-style {
+
+.support__text-style {
+  font-size: 14px;
+  line-height: 163.68%;
   color: #fff;
 }
 .email-style {
@@ -618,26 +615,116 @@ hr {
 .support-checkbox {
   margin-bottom: 40px;
 }
-.support-btn {
+.support__btn {
   display: flex;
   justify-content: end;
 }
-.suppor-icon {
+.icon-suppor {
   display: flex;
   justify-content: center;
   margin-left: 580px;
-} 
-.icon-text {
+  margin-bottom: 260px;
+}
+.icon-suppor__text {
   font-size: 18px;
-line-height: 26px;
-color: #E3B873;
-text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
-text-align: left;
-display: inline-flex;
-align-items: center;
+  line-height: 26px;
+  text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  color: #e3b873;
+}
+/* section 5 ========*/
+.img-works {
+  background-image: url(../html/img/room.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 93px;
+}
+.works__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.works__item-design {
+  cursor: pointer;
+  list-style-type: none;
+  font-size: 20px;
+  line-height: 38px;
 
-
+  color: #ffffff;
+}
+.works__item-links:hover {
+  color: #e3b873;
+  border-bottom: 1px solid;
+}
+.works {
+  display: flex;
+  justify-content: space-between;
+}
+.works__img-column1 {
+  margin-top: -40px;
+}
+.works__img-column2 {
+  margin-left: 43px;
+  margin-top: -113px;
 }
 
+.works__img {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: -40px;
+}
+.works__img-top {
+  margin-bottom: 37px;
+}
 
+/*  section 6 ========  */
+.reviews .camera__text {
+  line-height: 29px;
+  margin-bottom: 40px;
+  
+}
+.reviews {
+}
+.subtitle-bloc {
 
+}
+.icon-bloc {
+}
+.camera__text {
+}
+.reviews__bloc {
+  display: flex;
+  justify-content: space-between;
+
+}
+.reviews__img {
+  display: block;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+.reviews__name {
+  display: block;
+  width: 178px;
+  height: 42px;
+  font-family: 'Yeseva One';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+
+color: #181818;
+}
+.reviews__text {
+  font-size: 13px;
+line-height: 180%;
+
+color: #959595;
+}
+.reviews__bloc-list {
+  max-width: 324px;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
