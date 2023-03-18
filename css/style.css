@@ -683,21 +683,13 @@ hr {
 .reviews .camera__text {
   line-height: 29px;
   margin-bottom: 40px;
-  
 }
-.reviews {
-}
-.subtitle-bloc {
 
-}
-.icon-bloc {
-}
 .camera__text {
 }
 .reviews__bloc {
   display: flex;
   justify-content: space-between;
-
 }
 .reviews__img {
   display: block;
@@ -708,23 +700,42 @@ hr {
   display: block;
   width: 178px;
   height: 42px;
-  font-family: 'Yeseva One';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 23px;
+  margin-left: 23px;
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
 
-color: #181818;
+  color: #181818;
 }
 .reviews__text {
   font-size: 13px;
-line-height: 180%;
+  line-height: 180%;
+  padding-bottom: 67px;
+  padding-left: 20px;
+  padding-right: 25px;
 
-color: #959595;
+  color: #959595;
 }
 .reviews__bloc-list {
   max-width: 324px;
+}
+.bloc-list__item-client {
+  background: #ffffff;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+.bloc-list__blockquote {
   display: flex;
-  flex-wrap: wrap;
-  
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding-top: 24px;
+}
+.reviews__validity {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -42px;
+  margin-left: -16px;
 }
