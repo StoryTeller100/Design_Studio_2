@@ -418,7 +418,7 @@ hr {
   background-color: #e3b873;
 }
 
-/* SECTION 4 types-of-repair ========= */
+/* section 4 types-of-repair ========= */
 
 .subtitle-bloc {
   color: #131313;
@@ -680,16 +680,19 @@ hr {
 }
 
 /*  section 6 ========  */
+
+/*  !!!!!!!!!!!!! как расположить в зекркальном не навредив всей секции */
+
 .reviews {
-background-image: url(../html/img/frame.jpg);
-
-
+  background: url(../html/img/frame.jpg) left bottom repeat-x;
+  height: 1011px;
 }
-.reviews .camera__text {
+
+.reviews__camera-text {
   line-height: 29px;
   margin-bottom: 40px;
+  text-align: center;
 }
-
 
 .reviews__bloc {
   display: flex;
@@ -742,44 +745,75 @@ background-image: url(../html/img/frame.jpg);
   justify-content: space-between;
   margin-top: -42px;
   margin-left: -16px;
-  margin-bottom: 125px;
 }
-.reviews__form {
-background-color: #000;
-max-width: 883px;
-min-height: 445px;
-margin: 0  auto;
-display: flex;
-justify-content: center;
+.questions__form {
+  background-color: #000;
+  max-width: 883px;
+  min-height: 445px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
-.reviews__form-subtitle {
-color: #fff;
-margin-top: 35px;
-margin-bottom: 45px;
+.questions__form-subtitle {
+  color: #fff;
+  margin-top: 35px;
+  margin-bottom: 45px;
 }
-/* форма ======= */
-.reviews__form-bloc {
-  width: 520px; 
-  
+.reviews__frame {
+  margin-top: -273px;
 }
-.reviews-style {
-background-color: #000;
-max-width: 230px;
+/* section 7 ============ */
 
+/* форма  */
+.questions__form {
+  margin-top: -222px;
 }
-.reviews__form-contact {
+.questions__form-bloc {
+  width: 520px;
+}
+.questions-style {
+  background-color: #000;
+  max-width: 230px;
+}
+.questions__form-contact {
   display: flex;
   justify-content: space-between;
-  
 }
 .reviews-question {
   background-color: #000;
   width: 100%;
-  
 }
-.reviews-btn {
+.questions-btn {
   display: flex;
   justify-content: center;
   margin-bottom: 35px;
+}
+/* section 8 ======= */
+.contacts {
+  background-image: url(../html/img/sity-sity.jpg);
+  
+}
+.contacts__shadow {
+  background: rgba(0, 0, 0, 0.85);
+
+}
+.contacts__bloc-title{
+  color: #e3b873;
+  max-width: 500px;
+  text-align: center;
+
+}
+.icon-bloc {
+  min-width: 71px;
+  display: flex;
+  justify-content: space-between;
+ 
+
+}
+.contacts__bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   
 }
