@@ -763,7 +763,9 @@ hr {
   margin-top: -273px;
 }
 /* section 7 ============ */
-
+.questions {
+  position: relative;
+}
 /* форма  */
 .questions__form {
   margin-top: -222px;
@@ -791,29 +793,39 @@ hr {
 /* section 8 ======= */
 .contacts {
   background-image: url(../html/img/sity-sity.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-top: -231px;
   
 }
 .contacts__shadow {
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.87);
 
 }
 .contacts__bloc-title{
   color: #e3b873;
   max-width: 500px;
   text-align: center;
+  margin-bottom: 20px;
 
 }
-.icon-bloc {
+.icon-bloc { 
   min-width: 71px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 45px;
  
 
 }
 .contacts__bloc {
+  padding-top: 278px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 278px;
   
+}
+.contacts__bloc-gis {
+margin-bottom: 46px;
 }
