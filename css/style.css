@@ -93,6 +93,7 @@ body {
 .tel:hover {
   color: #e3b873;
   border-bottom: 1px solid;
+  
 }
 .tel:active {
   color: #e3b873;
@@ -137,8 +138,9 @@ body {
   background-image: url(../html/img/sity.jpg);
   background-size: cover;
   background-position: center;
+ /* почему светлая полоса под и над img */
 }
-/* не получилось поставить правильно фото в секции */
+
 .shadow {
   background: rgba(0, 0, 0, 0.7);
 }
@@ -161,7 +163,7 @@ body {
 
   color: #ffffff;
 }
-/*  под кнопками уезжает content */
+
 
 .about__button {
   width: 207px;
@@ -222,7 +224,7 @@ body {
 
 .room {
   max-width: 680px;
-  /* почему не видно фильтр */
+
   filter: drop-shadow(0px 50px 30px rgba(0, 0, 0, 0.15));
 }
 .projects__bloc-item {
@@ -312,7 +314,7 @@ body {
 
   display: flex;
   justify-content: center;
-  /* почему нельзя сделать  background-position: 50%; */
+  
   background-position: 50%;
 
   cursor: pointer;
@@ -373,7 +375,7 @@ hr {
   margin-bottom: 148px;
 }
 
-/* почему не работают заданные команды для button */
+
 .bttn {
   width: 200px;
   height: 51px;
@@ -439,7 +441,7 @@ hr {
 .repair__bloc1 {
   background-image: url(../html/img/redecorating.jpg);
 
-  /* background-size: cover; */
+
 }
 .repair__bloc2 {
   background-image: url(../html/img/overhaul.jpg);
@@ -747,7 +749,7 @@ hr {
   margin-left: -16px;
 }
 .questions__form {
-  background-color: #000;
+  background-color: #131313;
   max-width: 883px;
   min-height: 445px;
   margin: 0 auto;
@@ -774,7 +776,7 @@ hr {
   width: 520px;
 }
 .questions-style {
-  background-color: #000;
+  background-color: #131313;
   max-width: 230px;
 }
 .questions__form-contact {
@@ -782,7 +784,7 @@ hr {
   justify-content: space-between;
 }
 .reviews-question {
-  background-color: #000;
+  background-color: #131313;
   width: 100%;
 }
 .questions-btn {
@@ -796,6 +798,7 @@ hr {
   background-size: cover;
   background-position: center;
   margin-top: -231px;
+
   
 }
 .contacts__shadow {
@@ -809,7 +812,7 @@ hr {
   margin-bottom: 20px;
 
 }
-.icon-bloc { 
+.contacts__bloc-icon { 
   min-width: 71px;
   display: flex;
   justify-content: space-between;
@@ -828,4 +831,50 @@ hr {
 }
 .contacts__bloc-gis {
 margin-bottom: 46px;
+}
+.footer {
+  margin-top: -278px;
+}
+
+
+/* Media ====================== */
+
+
+@media (max-width: 768px) {
+    
+  .wrapper__header {
+    display: none;
+  }
+  .button-header {
+    display: none;
+  }
+  .container {
+   padding: 0 18px;
+   
+  }
+  /* SECTION 1  */
+  .title {
+  padding-top: 85px;
+
+  }
+  .about__btn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__button {
+    margin: 0 0 26px 0;
+    width: 100%;
+  }
+
+  /* SECTION 2  */
+  .projects__menu {
+
+  }
+
+
+
+
+
+
 }
