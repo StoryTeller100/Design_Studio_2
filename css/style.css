@@ -93,7 +93,6 @@ body {
 .tel:hover {
   color: #e3b873;
   border-bottom: 1px solid;
-  
 }
 .tel:active {
   color: #e3b873;
@@ -138,7 +137,7 @@ body {
   background-image: url(../html/img/sity.jpg);
   background-size: cover;
   background-position: center;
- /* почему светлая полоса под и над img */
+  /* почему светлая полоса под и над img */
 }
 
 .shadow {
@@ -163,7 +162,6 @@ body {
 
   color: #ffffff;
 }
-
 
 .about__button {
   width: 207px;
@@ -211,6 +209,9 @@ body {
 }
 .projects__service-list {
   max-width: 490px;
+}
+.pl {
+  display: none;
 }
 .subtitle {
   font-family: "Yeseva One";
@@ -294,29 +295,39 @@ body {
 }
 
 /* section 3 ============= */
+.camera {
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .camera__video {
   background-image: url(../html/img/men.jpg);
   width: 817px;
   height: 434px;
   margin: auto;
   margin-top: -217px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* filter: brightness(20%); */
 }
-.camera__shadow {
+.camera__video::before{
+  position: absolute;
+  content: '';
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-
   background-color: rgba(0, 0, 0, 0.8);
+  z-index: 0;
 }
+ 
 .camera__play {
   padding-top: 146px;
-
   display: flex;
   justify-content: center;
-  
   background-position: 50%;
-
   cursor: pointer;
 }
 hr {
@@ -329,7 +340,7 @@ hr {
 }
 
 .camera__text {
-  width: 652px;
+  max-width: 652px;
   margin: auto;
   margin-bottom: 92px;
   font-size: 18px;
@@ -374,7 +385,6 @@ hr {
   justify-content: center;
   margin-bottom: 148px;
 }
-
 
 .bttn {
   width: 200px;
@@ -440,8 +450,6 @@ hr {
 }
 .repair__bloc1 {
   background-image: url(../html/img/redecorating.jpg);
-
-
 }
 .repair__bloc2 {
   background-image: url(../html/img/overhaul.jpg);
@@ -798,27 +806,21 @@ hr {
   background-size: cover;
   background-position: center;
   margin-top: -231px;
-
-  
 }
 .contacts__shadow {
   background: rgba(0, 0, 0, 0.87);
-
 }
-.contacts__bloc-title{
+.contacts__bloc-title {
   color: #e3b873;
   max-width: 500px;
   text-align: center;
   margin-bottom: 20px;
-
 }
-.contacts__bloc-icon { 
+.contacts__bloc-icon {
   min-width: 71px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 45px;
- 
-
 }
 .contacts__bloc {
   padding-top: 278px;
@@ -826,22 +828,22 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 278px;
-  
 }
 .contacts__bloc-gis {
-margin-bottom: 46px;
+  margin-bottom: 46px;
 }
 .footer {
-  margin-top: -278px;
+ 
 }
-
 
 /* Media ====================== */
 
-
 @media (max-width: 768px) {
-    
+  .camera__video{
+    width: 100%;
+    margin-top: -255px;
+
+  }
   .wrapper__header {
     display: none;
   }
@@ -849,13 +851,13 @@ margin-bottom: 46px;
     display: none;
   }
   .container {
-   padding: 0 18px;
-   
+    padding: 0 18px;
+    margin: 0 auto;
   }
   /* SECTION 1  */
   .title {
-  padding-top: 85px;
-
+    line-height: 31px;
+    padding-top: 85px;
   }
   .about__btn {
     display: flex;
@@ -869,8 +871,183 @@ margin-bottom: 46px;
 
   /* SECTION 2  */
   .projects__menu {
-
+    display: none;
+   
   }
+  .room {
+    display: none;
+  }
+  
+  .projects__subtitle {
+    margin: 36px 0 22px;
+    text-align-last: center;
+
+    display: flex;
+    justify-content: center;
+  }
+  .projects__service-list-text {
+    text-align: center;
+    
+   
+  }
+  .projects__service-list-text::after {
+    content: url(../html/img/maskgroup2.jpg);
+   /* как задать margin-top: 36px; ???????????? */
+    /* margin-top: 36px; */
+    display: block;
+    position: relative;
+    z-index: 0;
+  }
+  .pl {
+    display: inline;
+  }
+  .pl1 {
+  position: absolute;
+  margin-top: -300px;
+  margin-left: 85px;
+  z-index: 1;
+  }
+  .pl2 {
+    position: absolute;
+  margin-top: -300px;
+  margin-left: 600px;
+  }
+  .projects__service-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .projects__slider {
+    display: none;
+  }
+ 
+  .projects__content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  .projects__bloc {
+    
+  }
+
+  
+
+  /* SECTION 3 */
+  .camera {
+    background: #131313;
+  }
+  .feedbac {
+    background: #131313;
+    margin-bottom: 83px;
+  }
+
+  
+  .camera__play {
+  }
+  .camera__text {
+    padding-bottom: 61px;
+    margin-bottom: 0;
+   
+    color: #fff;
+  }
+
+  .projects__icon {
+    margin-top: 20px;
+    padding-bottom: 300px;
+    /* Почему появляется разделительная полоса между секциями?????????? */
+  }
+
+  /* форма */
+  .feedbac__form-name {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+ 
+  /* полоса в форме (зависит от projects__menu)????????????????????? */
+  .feedbac__input {
+    width: 100%;
+    background: #131313;
+    color: #fff;
+   
+    border-bottom: 1px solid #959595;
+    margin-bottom: 63px;
+  }
+  
+  .feedbac__label {
+    width: 100%;
+    background: #131313;
+    color: #959595;
+  } 
+  /* поменять местами кнопку с чикбоксом ????????????? */
+  .feedbac__checkbox {
+    color: #fff;
+    padding-bottom: 89px;
+    margin: 0;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .bttn {
+    position: absolute;
+    margin: 85px 0 0 0;
+    width: 95%;
+   /* не могу сделать нужный размер кнопки???????????? */
+  }
+
+/* SECTION 4 */
+.repair {
+  
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ 
+
+}
+/* Смущает величина блоков, возможно они должны быть на ширину контейнера?????????????????? */
+.repeat {
+  margin-bottom: 200px;
+  
+}
+.support {
+  display: none;
+}
+.icon-suppor {
+  display: none;
+}
+/* section 5  */
+.img-works {
+  background: #fff;
+}
+/* .works__img-column2:first-child {
+display: none;
+} */
+.works__img-btm {
+  display: none;
+}
+/*  header  как поставить без минуса*/
+.reviews {
+  display: none;
+}
+.footer {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
