@@ -213,11 +213,13 @@ body {
 .pl {
   display: none;
 }
+.projects__img-media {
+  display: none;
+}
 .subtitle {
   font-family: "Yeseva One";
   font-size: 27px;
   line-height: 37px;
-  letter-spacing: -0.07em;
   text-transform: uppercase;
   color: #e3b873;
   margin-bottom: 34px;
@@ -296,7 +298,7 @@ body {
 
 /* section 3 ============= */
 .camera {
- display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -312,9 +314,9 @@ body {
   align-items: center;
   /* filter: brightness(20%); */
 }
-.camera__video::before{
+.camera__video::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   width: 100%;
@@ -322,7 +324,7 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 0;
 }
- 
+
 .camera__play {
   padding-top: 146px;
   display: flex;
@@ -649,6 +651,7 @@ hr {
   background-image: url(../html/img/room.jpg);
   background-size: cover;
   background-position: center;
+
   margin-bottom: 93px;
 }
 .works__list {
@@ -679,7 +682,10 @@ hr {
   margin-left: 43px;
   margin-top: -113px;
 }
-
+.works__img-media,
+.works__media-pl {
+  display: none;
+}
 .works__img {
   display: flex;
   justify-content: flex-end;
@@ -833,16 +839,14 @@ hr {
   margin-bottom: 46px;
 }
 .footer {
- 
 }
 
 /* Media ====================== */
 
 @media (max-width: 768px) {
-  .camera__video{
+  .camera__video {
     width: 100%;
     margin-top: -255px;
-
   }
   .wrapper__header {
     display: none;
@@ -854,7 +858,7 @@ hr {
     padding: 0 18px;
     margin: 0 auto;
   }
-  /* SECTION 1  */
+  /* SECTION 1 =================== */
   .title {
     line-height: 31px;
     padding-top: 85px;
@@ -869,15 +873,14 @@ hr {
     width: 100%;
   }
 
-  /* SECTION 2  */
+  /* SECTION 2 ======================= */
   .projects__menu {
     display: none;
-   
   }
   .room {
     display: none;
   }
-  
+
   .projects__subtitle {
     margin: 36px 0 22px;
     text-align-last: center;
@@ -887,30 +890,31 @@ hr {
   }
   .projects__service-list-text {
     text-align: center;
-    
-   
   }
-  .projects__service-list-text::after {
+  /* .projects__service-list-text::after {
     content: url(../html/img/maskgroup2.jpg);
    /* как задать margin-top: 36px; ???????????? */
-    /* margin-top: 36px; */
-    display: block;
+  /* margin-top: 36px; */
+
+  .projects__img-media {
+    display: inline-block;
     position: relative;
     z-index: 0;
   }
+
   .pl {
     display: inline;
   }
   .pl1 {
-  position: absolute;
-  margin-top: -300px;
-  margin-left: 85px;
-  z-index: 1;
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 85px;
+    z-index: 1;
   }
   .pl2 {
     position: absolute;
-  margin-top: -300px;
-  margin-left: 600px;
+    margin-top: -300px;
+    margin-left: 600px;
   }
   .projects__service-list {
     display: flex;
@@ -921,19 +925,16 @@ hr {
   .projects__slider {
     display: none;
   }
- 
+
   .projects__content {
     display: flex;
     flex-direction: column;
     margin-bottom: 0px;
   }
   .projects__bloc {
-    
   }
 
-  
-
-  /* SECTION 3 */
+  /* SECTION 3 ================*/
   .camera {
     background: #131313;
   }
@@ -942,13 +943,12 @@ hr {
     margin-bottom: 83px;
   }
 
-  
   .camera__play {
   }
   .camera__text {
     padding-bottom: 61px;
     margin-bottom: 0;
-   
+
     color: #fff;
   }
 
@@ -958,29 +958,29 @@ hr {
     /* Почему появляется разделительная полоса между секциями?????????? */
   }
 
-  /* форма */
+  /* форма =====*/
   .feedbac__form-name {
     display: flex;
     flex-direction: column;
     margin: 0;
   }
- 
+
   /* полоса в форме (зависит от projects__menu)????????????????????? */
   .feedbac__input {
     width: 100%;
     background: #131313;
     color: #fff;
-   
+
     border-bottom: 1px solid #959595;
     margin-bottom: 63px;
   }
-  
+
   .feedbac__label {
     width: 100%;
     background: #131313;
     color: #959595;
-  } 
-  /* поменять местами кнопку с чикбоксом ????????????? */
+  }
+
   .feedbac__checkbox {
     color: #fff;
     padding-bottom: 89px;
@@ -989,69 +989,114 @@ hr {
     display: flex;
     justify-content: flex-start;
   }
-  .bttn {
+
+  .button.bttn {
     position: absolute;
     margin: 85px 0 0 0;
     width: 95%;
-   /* не могу сделать нужный размер кнопки???????????? */
+    /* не могу сделать нужный размер кнопки???????????? */
   }
 
-/* SECTION 4 */
-.repair {
-  
-  display: flex;
-  flex-direction: column;
- align-items: center;
- 
+  /* SECTION 4 =====================*/
+  .repair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  /* Смущает величина блоков, возможно они должны быть на ширину контейнера?????????????????? */
+  .repeat {
+    margin-bottom: 200px;
+  }
+  .support {
+    display: none;
+  }
+  .icon-suppor {
+    display: none;
+  }
+  /* section 5  ==============*/
 
-}
-/* Смущает величина блоков, возможно они должны быть на ширину контейнера?????????????????? */
-.repeat {
-  margin-bottom: 200px;
-  
-}
-.support {
-  display: none;
-}
-.icon-suppor {
-  display: none;
-}
-/* section 5  */
-.img-works {
-  background: #fff;
-}
-/* .works__img-column2:first-child {
-display: none;
-} */
-.works__img-btm {
-  display: none;
-}
-/*  header  как поставить без минуса*/
-.reviews {
-  display: none;
-}
-.footer {
-  display: none;
-}
+  .container.works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-works,
+  .shadow.ww {
+    background-color: #fff;
+  }
+  .subtitle.works {
+    text-align: center;
+  }
+  .works__item-design {
+    display: none;
+  }
+  .works__img-btm,
+  .works__img-column2,
+  .works__img-column1 {
+    display: none;
+  }
+  .works__media-pl {
+    display: inline;
+  }
+  .works__img-media {
+    display: inline;
+    position: relative;
+    z-index: 0;
+  }
+  .works__media-pl--pl11 {
+    display: inline;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: -665px;
+    z-index: 1;
+  }
+  .works__media-pl--pl22 {
+    display: inline;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: -105px;
+    z-index: 1;
+  }
 
+  /* section 6 ================== */
+  .reviews {
+    display: none;
+  }
 
+  /* section 7 =====================*/
 
+  .questions {
+    background: #131313;
+  }
+  .questions-style {
+    max-width: 100%;
+  }
+  .questions__form {
+    margin-top: -121px;
+  }
+  .questions__form-contact {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
+  /* section 8 ================== */
+  .contacts__shadow {
+    background: #131313;
+  }
+  .contacts__bloc-gis {
+  }
 
+  .contacts__bloc-title {
+    order: 1;
+    text-align: center;
+  }
 
+  .contacts__bloc-icon {
+    order: 2;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .footer {
+    display: none;
+  }
 }
