@@ -4,7 +4,7 @@ img {
   max-width: 100%;
   display: block;
 }
-/* Убираем внутренние отступы */
+
 ul[class],
 ol[class] {
   padding: 0;
@@ -14,7 +14,7 @@ ol[class] {
 *::after {
   box-sizing: border-box;
 }
-/* Убираем внешние отступы */
+
 body,
 h1,
 h2,
@@ -46,6 +46,7 @@ body {
   font-family: "Nunito Sans";
   font-style: normal;
   min-height: 100vh;
+  
 }
 
 .wrapper {
@@ -312,7 +313,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* filter: brightness(20%); */
+  
 }
 .camera__video::before {
   position: absolute;
@@ -697,7 +698,7 @@ hr {
 
 /*  section 6 ========  */
 
-/*  !!!!!!!!!!!!! как расположить в зекркальном не навредив всей секции */
+
 
 .reviews {
   background: url(../html/img/frame.jpg) left bottom repeat-x;
@@ -839,332 +840,26 @@ hr {
 .contacts__bloc-gis {
   margin-bottom: 46px;
 }
-.footer {
-}
-.works__carousel{
-  display: none;
 
+.works__carousel {
+  display: none;
 }
-.projects__carousel{
+.projects__carousel {
   display: none;
 }
 input::placeholder {
   color: #fff;
 }
-/* Media ====================== */
-
-@media (max-width: 768px) {
-  .works__img{
-    display: none;
-  }
-  .works{
-    background-color: #131313;
-    background: linear-gradient(to bottom, transparent 65%, #131313 65%);
-
-  }
-  .works__carousel{
-    display: block;
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    z-index: 2;
-    /* background-image: url(../html/img/room.jpg);
-
-    background-size: contain;
-    background-repeat: no-repeat; */
-  }
-  .works__nav{
-    position: absolute;
-    top: 50%;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 50px;
-    width: 100%;
-  }
-
-  .camera__video {
-    width: 100%;
-    margin-top: -255px;
-  }
-  .wrapper__header {
-    display: none;
-  }
-  .button-header {
-    display: none;
-  }
-  .container {
-    padding: 0 18px;
-    margin: 0 auto;
-  }
-  /* SECTION 1 =================== */
-  .title {
-    line-height: 31px;
-    padding-top: 85px;
-  }
-  .about__btn {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .about__button {
-    margin: 0 0 26px 0;
-    width: 100%;
-  }
-
-  /* SECTION 2 ======================= */
-  .projects__menu {
-    display: none;
-  }
-  .room {
-    display: none;
-  }
-
-  .projects__subtitle {
-    margin: 36px 0 22px;
-    text-align-last: center;
-
-    display: flex;
-    justify-content: center;
-  }
-  .projects__service-list-text {
-    text-align: center;
-  }
-  /* .projects__service-list-text::after {
-    content: url(../html/img/maskgroup2.jpg);
-   /* как задать margin-top: 36px; ???????????? */
-  /* margin-top: 36px; */
-
-  .projects__img-media {
-    display: inline-block;
-    position: relative;
-    z-index: 0;
-    width: 100%;
-    margin-bottom: 37px;
-   
-  }
-
-
-
-  .projects__service-list {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-  }
-
-  .projects__slider {
-    display: none;
-  }
-
-  .projects__content {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0px;
-  }
-  .projects__bloc {
-  }
-
-  /* SECTION 3 ================*/
-  .camera {
-    background: #131313;
-  }
-  .feedbac {
-    background: #131313;
-    margin-bottom: 83px;
-  }
-
-  .camera__play {
-  }
-  .camera__text {
-    padding-bottom: 61px;
-    margin-bottom: 0;
-
-    color: #fff;
-  }
-
-  .projects__icon {
-    margin-top: 20px;
-    padding-bottom: 300px;
-    /* Почему появляется разделительная полоса между секциями?????????? */
-  }
-
-  /* форма =====*/
-  .feedbac__form-name {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-  }
-
-  /* полоса в форме (зависит от projects__menu)????????????????????? */
-  .feedbac__input {
-    width: 100%;
-    background: #131313;
-    color: #fff;
-
-    border-bottom: 1px solid #959595;
-    margin-bottom: 63px;
-  }
-
-  .feedbac__label {
-    width: 100%;
-    background: #131313;
-    color: #959595;
-  }
-
-  .feedbac__checkbox {
-    color: #fff;
-    /* padding-bottom: 89px; */
-    margin: 0;
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
-  }
-    .feedbac__checkbox-span {
-      display: block;
-      padding-bottom: 89px;
-    }
-  .button.bttn {
-    position: absolute;
-    margin: 108px 0 0 0;
-    width: 95%;
-    /* не могу сделать нужный размер кнопки???????????? */
-  }
-  /* .feedbac__bttn {
-    padding-bottom: 85px;
-  } */
-  /* SECTION 4 =====================*/
-  .repair {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
-  }
-  /* Смущает величина блоков, возможно они должны быть на ширину контейнера?????????????????? */
-  .repeat {
-    margin-bottom: 200px;
-  }
-  .support {
-    display: none;
-  }
-  .icon-suppor {
-    display: none;
-  }
- 
-  /* section 5  ==============*/
-
-  .container.works {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .img-works,
-  .shadow.ww {
-    background-color: #fff;
-  }
-  .subtitle.works {
-    text-align: center;
-  }
-  .works__item-design {
-    display: none;
-  }
-  .works__img-btm,
-  .works__img-column2,
-  .works__img-column1 {
-    display: none;
-  }
-  .works__media-pl {
-    display: inline;
-  }
-  .works__img-media {
-    display: inline;
-    position: relative;
-    z-index: 0;
-  }
-  .works__media-pl--pl11 {
-    display: inline;
-    position: absolute;
-    margin-top: 200px;
-    margin-left: -665px;
-    z-index: 1;
-  }
-  .works__media-pl--pl22 {
-    display: inline;
-    position: absolute;
-    margin-top: 200px;
-    margin-left: -105px;
-    z-index: 1;
-  }
-
-  /* section 6 ================== */
-  .reviews {
-    display: none;
-  }
-
-  /* section 7 =====================*/
-
-  .questions {
-    background: #131313;
-  }
-  .questions-style {
-    max-width: 100%;
-    /* width: 520px; */
-  }
-  input::placeholder {
-    color: #fff;
-  }
-  .questions__form {
-    margin-top: -121px;
-  }
-  .questions__form-subtitle {
-    margin-top: 65px;
-  }
-  .questions__form-contact {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .support__btn.questions-btn {
-  margin-bottom: 150px;
-  margin-top: -50;
-  }
-  /* .support__text-style {
-    display: block;
-    margin-bottom: 40px;
-  } */
-  /* section 8 ================== */
-  .contacts__shadow {
-    background: #131313;
-  }
-  .contacts__bloc-gis {
-    background-size: cover;
-   margin-top: 280px;
-
-  }
-
-  .contacts__bloc-title {
-    order: 1;
-    text-align: center;
-  }
-
-  .contacts__bloc-icon {
-    order: 2;
-  }
-
-  .footer {
-    display: none;
-  }
-  .projects__carousel{
-    display: block;
-    position: relative;
-  }
-  .pl{
-    position: absolute;
-    top: 47%;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 40px;
-    width: 100%;
-  }
-
+/* footer============ */
+.footer {
+  background-color: #131313;
+  padding: 24px 0 22px;
+  font-size: 11px;
+  line-height: 15px;
+  color: #fff;
+}
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
