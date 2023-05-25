@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/normalais.css" />
+    <!-- <link rel="stylesheet" href="../css/normalaize.css" /> -->
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/adaptive.css">
 
@@ -169,8 +169,8 @@
           <div class="container">
             <form action="#">
               <div class="feedbac__form-name first-form">
-                <div>
-                  <label class="feedbac__label" for="firstname">Name</label
+                <div class="feedbac__contact">
+                  <label class="feedbac__label" for="username">Name</label
                   ><br />
                  
                   <input
@@ -181,8 +181,8 @@
                     value="What is your name:"
                   />
                 </div>
-                <div>
-                  <label class="feedbac__label" for="Phone">Phone</label><br />
+                <div class="feedbac__contact">
+                  <label class="feedbac__label" for="userphone">Phone</label><br />
                   <input
                     class="feedbac__input"
                     tabindex="2"
@@ -191,12 +191,6 @@
                     value="Your phone number:"
                   />
                 </div>
-
-                <div class="feedbac__bttn">
-                  <button class="button bttn">Submit</button>
-                </div>
-              </div>
-              <div>
                 <div class="feedbac__checkbox">
                   <label class="label">
                     <input class="checkbox" type="checkbox" />
@@ -204,6 +198,12 @@
                     <span class="feedbac__checkbox-span">I agree to the processing of personal data.</span>
                   </label>
                 </div>
+                <div class="feedbac__bttn">
+                  <button class="button bttn">Submit</button>
+                </div>
+              </div>
+              <div>
+
               </div>
             </form>
           </div>
@@ -315,7 +315,7 @@
 
                   <div class="support__form-style">
                     <div>
-                      <label class="support__label-style" for="firstname"
+                      <label class="support__label-style" for="username"
                         >Name</label
                       ><br />
 
@@ -330,7 +330,7 @@
                     </div>
 
                     <div>
-                      <label class="support__label-style" for="Phone"
+                      <label class="support__label-style" for="userphone"
                         >Phone</label
                       ><br />
                       <input
@@ -344,7 +344,7 @@
                     </div>
 
                     <div>
-                      <label class="support__label-style" for="firstname"
+                      <label class="support__label-style" for="username"
                         >Email</label
                       ><br />
 
@@ -368,7 +368,7 @@
                         </label>
                       </div>
                     </div>
-<!-- ??????????????????? кнопку позиционировать правильно(уплывает) -->
+
                     <div class="support__btn">
                       <button class="button bttn">Call the measurer</button>
                     </div>
@@ -570,19 +570,19 @@
                           <label class="support__label-style" for="username"
                             >Name</label
                           ><br />
-    <!-- ???????????????? задать размеры  -->
+  
                           <input
                             class="support__input-style questions-style"
                             tabindex="1"
                             type="text"
                             name="username"
                             placeholder="What is your name:"
-                            id="username"
+                            id="user-name"
                           />
                         </div>
     
                         <div>
-                          <label class="support__label-style" for="Phone"
+                          <label class="support__label-style" for="userphone"
                             >Phone</label
                           ><br />
                           <input
@@ -597,7 +597,7 @@
                       </div>
   
                       <div>
-                        <label class="support__label-style" for="firstname"
+                        <label class="support__label-style" for="username"
                           >Question</label
                         ><br />
   
@@ -644,7 +644,7 @@
                 </div>
                 <img class="contacts__bloc-gis" src="../html/img/2gis.jpg" alt="2gis">
               </div>
-            <!-- ????????????????????? 2 гис сделать правильно -->
+          
           </div>
 
         </section>

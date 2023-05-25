@@ -1,15 +1,5 @@
-/* .camera__video::before{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 0;
-  } */
- 
-  
+
+
 @media (max-width: 1299px) {
   .works__img {
     display: none;
@@ -25,7 +15,6 @@
     display: flex;
     align-items: center;
     z-index: 2;
-    
   }
   .works__nav {
     position: absolute;
@@ -50,8 +39,8 @@
   .container {
     padding: 0 18px;
     margin: 0 auto;
-    
-      max-width: 100%;
+
+    max-width: 100%;
   }
   /* SECTION 1 =================== */
   .title {
@@ -86,7 +75,7 @@
   .projects__service-list-text {
     text-align: center;
   }
- 
+
   .projects__img-media {
     display: inline-block;
     position: relative;
@@ -110,7 +99,6 @@
     flex-direction: column;
     margin-bottom: 0px;
   }
-  
 
   /* SECTION 3 ================*/
   .camera {
@@ -121,7 +109,6 @@
     margin-bottom: 83px;
   }
 
- 
   .camera__text {
     padding-bottom: 61px;
     margin-bottom: 0;
@@ -132,18 +119,24 @@
   .projects__icon {
     margin-top: 20px;
     padding-bottom: 300px;
-    
   }
 
   /* форма =====*/
   .feedbac__form-name {
     display: flex;
     flex-direction: column;
-    
+
     margin: 0 auto;
   }
-
-  
+  .feedbac__bttn {
+    order: 2;
+  }
+  .feedbac__contact {
+    order: 2;
+  }
+  .questions__form-bloc {
+    width: 95%;
+  }
   .feedbac__input {
     width: 100%;
     background: #131313;
@@ -161,22 +154,18 @@
 
   .feedbac__checkbox {
     color: #fff;
-    
-    margin: 0;
+    margin-top: -10px;
+    margin-bottom: 40px;
     position: relative;
     display: flex;
     justify-content: flex-start;
   }
-  .feedbac__checkbox-span {
-    display: block;
-    padding-bottom: 89px;
+
+  .feedbac__bttn {
+    transform: translateY(25px);
   }
   .button.bttn {
-    position: absolute;
-    margin: 108px 0 0 0;
-    width: 95%;
-    
-    
+    width: 100%;
   }
 
   /* SECTION 4 =====================*/
@@ -186,7 +175,7 @@
     align-items: center;
     margin-bottom: 50px;
   }
- 
+
   .repeat {
     margin-bottom: 200px;
   }
@@ -254,7 +243,9 @@
   }
   .questions-style {
     max-width: 100%;
-    
+  }
+  .support__input-style {
+    width: 100%;
   }
   input::placeholder {
     color: #fff;
@@ -268,12 +259,13 @@
   .questions__form-contact {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
   }
   .support__btn.questions-btn {
-    margin-bottom: 150px;
+    margin-bottom: 30px;
     margin-top: -50;
   }
- 
+
   /* section 8 ================== */
   .contacts__shadow {
     background: #131313;
@@ -309,4 +301,3 @@
     width: 100%;
   }
 }
-

@@ -46,7 +46,6 @@ body {
   font-family: "Nunito Sans";
   font-style: normal;
   min-height: 100vh;
-  
 }
 
 .wrapper {
@@ -100,16 +99,7 @@ body {
   border-bottom: 1px solid;
 }
 
-/* .tel.activ::after {
-  content: "";
-  width: 69%;
-  height: 1px;
-  background-color: #e3b873;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-} */
-/* кнопка */
+
 .button {
   display: inline-block;
   text-transform: uppercase;
@@ -138,7 +128,7 @@ body {
   background-image: url(../html/img/sity.jpg);
   background-size: cover;
   background-position: center;
-  /* почему светлая полоса под и над img */
+  
 }
 
 .shadow {
@@ -313,7 +303,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .camera__video::before {
   position: absolute;
@@ -356,8 +345,8 @@ hr {
 
 .feedbac__form-name {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-
   margin: auto;
 }
 .first-form {
@@ -383,10 +372,19 @@ hr {
   color: rgba(54, 54, 54, 0.502);
   border: 1px solid;
 }
+.feedbac__bttn {
+  order: 1;
+}
+.feedbac__contact {
+  order: 1;
+}
 .feedbac__checkbox {
   display: flex;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  order: 2;
   margin-bottom: 148px;
+  margin-top: 34px;
 }
 
 .bttn {
@@ -433,7 +431,7 @@ hr {
   background-color: #e3b873;
 }
 
-/* section 4 types-of-repair ========= */
+/* section 4  ========= */
 
 .subtitle-bloc {
   color: #131313;
@@ -508,7 +506,7 @@ hr {
 
   color: #ffffff;
 }
-/* Поддержка */
+/* support */
 .support {
   display: flex;
   justify-content: end;
@@ -697,8 +695,6 @@ hr {
 }
 
 /*  section 6 ========  */
-
-
 
 .reviews {
   background: url(../html/img/frame.jpg) left bottom repeat-x;
