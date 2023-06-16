@@ -169,35 +169,46 @@ body {
 }
 .projects__menu {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  padding: 89px 0 45px 0 !important;
 }
-.projects__item {
-  margin: 89px 60px 45px 0;
-}
+
 .projects__link {
   font-family: "Yeseva One";
   font-size: 14px;
   line-height: 19px;
   text-transform: uppercase;
   padding-bottom: 3px;
-
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
   color: rgba(255, 255, 255, 0.3);
+}
+.projects__link--active {
+  color: #e3b873;
+  border-bottom: 1px solid;
+}
+.projects__item:last-child {
+  margin-right: 0;
 }
 .projects__link:hover {
   color: #e3b873;
   border-bottom: 1px solid;
 }
-.projects__link:active {
-  color: #e3b873;
-  border-bottom: 1px solid;
-}
+
 .projects__content {
   display: flex;
   justify-content: space-between;
   margin-bottom: 91px;
 }
 .projects__service-list {
+  padding-top: 160px;
   max-width: 490px;
+}
+.pl_1 {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
 }
 .pl {
   display: none;
@@ -214,7 +225,7 @@ body {
   margin-bottom: 34px;
 }
 
-.room {
+.sochi_thieves {
   max-width: 680px;
 
   filter: drop-shadow(0px 50px 30px rgba(0, 0, 0, 0.15));
@@ -235,10 +246,21 @@ body {
 }
 .projects__slider {
   display: flex;
+  justify-content: space-between;
+  width: 40%;
 }
-.group:last-child {
-  margin-left: 30px;
+#sliders-rounds {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 45%;
 }
+.group {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
 .group-1 {
   border-radius: 50%;
   width: 10px;
@@ -278,7 +300,7 @@ body {
 
   color: #ffffff;
 }
-.projects__bloc {
+.projects__bloc1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -304,7 +326,9 @@ body {
   align-items: center;
 }
 .camera__video {
+  /* это img вместо видео */
   background-image: url(../html/img/men.jpg);
+
   width: 817px;
   height: 434px;
   margin: auto;
@@ -325,11 +349,14 @@ body {
   z-index: 0;
 }
 
-.camera__play {
+/* .camera__play {
   padding-top: 146px;
   display: flex;
   justify-content: center;
   background-position: 50%;
+  cursor: pointer;
+} */
+.camera__video-play {
   cursor: pointer;
 }
 hr {
@@ -868,4 +895,15 @@ input::placeholder {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.slide-round-btn {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slide-round-btn--active {
+  background: rgba(255, 255, 255, 1);
 }
