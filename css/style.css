@@ -99,7 +99,6 @@ body {
   border-bottom: 1px solid;
 }
 
-
 .button {
   display: inline-block;
   text-transform: uppercase;
@@ -128,7 +127,6 @@ body {
   background-image: url(../html/img/sity.jpg);
   background-size: cover;
   background-position: center;
-  
 }
 
 .shadow {
@@ -234,6 +232,18 @@ body {
   text-transform: uppercase;
 
   color: #e3b873;
+}
+.projects__slider {
+  display: flex;
+}
+.group:last-child {
+  margin-left: 30px;
+}
+.group-1 {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-left: 30px;
 }
 .projects__service-list-text {
   font-family: "Nunito Sans";
