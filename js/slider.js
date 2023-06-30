@@ -5,6 +5,8 @@ let prevSlideBtn = document.getElementById("prev-slide");
 const roundsRow = document.getElementById("sliders-rounds");
 const sliderCitiesTexts = document.getElementById("projects__link");
 const citiesLinksRow = document.getElementById("cities-links-row");
+const mobileButtonLeft = document.getElementById("mobile-slider-left");
+const mobileButtonRight = document.getElementById("mobile-slider-right");
 
 let content = [
   {
@@ -70,6 +72,8 @@ function showSlide(index) {
   const repairTimeText = document.getElementById("repair-time-text");
   const repairCostText = document.getElementById("repair-cost-text");
   const slideImg = document.getElementById("slide-img");
+  const mobileSlideImg = document.getElementById("mobile-slider-img");
+
   const roundsArr = document.querySelectorAll(".slide-round-btn");
   const citiesLinksRow = document.querySelectorAll(".projects__link");
   cityText.textContent = content[index].cityText;
@@ -78,6 +82,9 @@ function showSlide(index) {
   repairCostText.textContent = content[index].repairCostTime;
   slideImg.src = content[index].img;
   slideImg.alt = content[index].cityText;
+
+  mobileSlideImg.src = content[index].img;
+  mobileSlideImg.alt = content[index].cityText;
 
   for (let i = 0; i < content.length; i++) {
     roundsArr[i].classList.remove("slide-round-btn--active");
@@ -112,6 +119,9 @@ content.forEach((slide, i) => {
 
 nextSlideBtn.addEventListener("click", () => showNextSlide());
 prevSlideBtn.addEventListener("click", () => showPrevSlide());
+
+mobileButtonLeft.addEventListener("click", () => showPrevSlide());
+mobileButtonRight.addEventListener("click", () => showNextSlide());
 
 showSlide(0);
 
